@@ -1,0 +1,388 @@
+/*+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+--+-+-+-+-+-+-+-+-+-+-+-+-ESTILOS COMUNES+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+
+@font-face{
+
+    /*@font-face: Es una regla de CSS que permite especificar una fuente personalizada para su uso en el documento.
+    font-family: "Gruppo";: Define un nombre para la fuente que se puede utilizar en otros lugares del CSS. En este caso, el nombre es "Gruppo".
+    src: url(../assets/fonts/Gruppo-Regular.ttf);: Indica la ubicación del archivo de fuente que se debe cargar.*/
+
+    font-family: "Gruppo";
+    src: url(../assets/fonts/Gruppo-Regular.ttf);
+}
+*{
+
+    /*El selector universal (*) aplica estos estilos a todos los elementos del documento.
+    margin: 0;: Elimina el margen por defecto que algunos navegadores aplican a los elementos.
+    box-sizing: border-box;: Cambia el modelo de caja para que el padding y el border se incluyan en el width y height del elemento.*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Gruppo";
+    background-color: white;
+    
+    /*Este codigo que aparece a continuación nos permite dejar fijo en la parte de abajo el footer independientemente
+    del contenido que tengamos en las demás secciones*/
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+html{
+
+    /*max-height: 100%;: Limita la altura del elemento html al 100% de la altura del viewport (ventana del navegador).*/
+
+    max-height: 100%;
+}
+/*--------------------------HEADER--------------------------*/
+
+header{
+
+    /*width: 100%;: Establece el ancho del encabezado al 100% del contenedor padre, en este caso, el body del documento. Esto asegura que el encabezado se extienda a lo largo de toda la página.
+    height: 150px;: Define la altura fija del encabezado en 150 píxeles.
+    display: flex;: Utiliza el modelo de caja flexible para el encabezado, permitiendo que sus hijos se distribuyan de manera flexible dentro del contenedor.
+    justify-content: space-between;: Alinea los elementos hijos (en este caso, el logotipo y la frase) de manera que haya el máximo espacio posible entre ellos, colocándolos en los extremos del encabezado.*/
+    
+    width: 100%;
+    height: 150px;
+    background-color:rgb(166, 49, 135);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.logotipo{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.frase{
+    color: white;
+    text-align: right;
+}
+h1, h2{
+    color: rgb(79, 26, 128);
+    font-weight: bolder;
+    text-align: left;
+    padding: 5px 20px;
+}
+h3{
+    color: rgb(109, 22, 86);
+    font-weight: bolder;
+    padding: 5px 20px;
+    text-align: center;
+   
+}
+
+/*--------------------BARRA NAVEGACION----------------------*/
+
+nav{
+
+    /*width: 100%;: Establece que el ancho del contenedor de navegación abarque todo el ancho disponible.
+    display: flex;: Usa el modelo de diseño flexbox para alinear los elementos hijos (como el menú y el formulario).
+    justify-content: space-between;: Distribuye el espacio entre los elementos hijos (los enlaces de navegación y el formulario de búsqueda), colocando el primer elemento en el extremo izquierdo y el último en el extremo derecho.*/
+
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+form{
+    margin-right: 20px;
+}
+nav ul{
+
+    /*display: flex;: Usa flexbox para organizar los elementos <li> dentro del <ul> en una fila horizontal.
+    list-style: none;: Elimina los puntos predeterminados de la lista, haciendo que los elementos de la lista se muestren sin viñetas.*/
+
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    background-color:rgb(166, 49, 135);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: azure;
+}
+a:hover{
+
+    /*a:hover: Cambia el fondo del enlace a un tono de ciruela cuando el cursor está sobre él.*/
+
+    background-color: plum;
+}
+a:active{
+
+    /*a:active: Cambia el color del texto del enlace a un tono oscuro cuando se está haciendo clic en él.*/
+
+    color: rgb(79, 26, 128);
+}
+
+/*-----------------------FOOTER-----------------------------*/
+
+footer{
+    background-color:rgb(166, 49, 135);
+}
+.contenido_redes{
+
+    /*display: flex;: Activa el modelo de diseño flexible, permitiendo una distribución fluida de los elementos hijos.
+    flex-flow: row;: Organiza los elementos hijos en una fila horizontal.
+    justify-content: center;: Centra los elementos hijos horizontalmente dentro del contenedor.
+    align-items: center;: Alinea los elementos hijos verticalmente en el centro del contenedor.*/
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.titulo_redes{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+.redes{
+    margin: 10px 20px;
+
+}
+.contenido_relacionado{
+    display: flex;
+    margin: 10px auto;
+}
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+--+-+-+-+-+-+-+-+-+-+-+-+-ESTILOS INDEX+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+
+/*------------------------MAIN------------------------------*/
+
+main{
+    display: flex;
+    flex-flow: column;
+
+}
+main section{
+    width: 100%;
+    padding: 10px;
+}
+
+p{
+    color: rgb(135, 123, 123);
+    font-weight: bold;
+    padding: 5px 20px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+article{
+    text-align: center;
+    margin: 15px auto;
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+.imagen{
+    width: 430px;
+    height: auto;
+    
+}
+.horario{
+    display: flex;
+    flex-flow: column;
+    
+}
+.puntos{
+    border-bottom: 5px dotted rgb(166, 49, 135);
+    padding-bottom: 20px;
+}
+
+.principal{
+    background-color: rgb(237, 232, 232);
+}
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+--+-+-+-+-+-+-+-+-+-+-+-+-ESTILOS CONTACTO+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+
+/*------------------------MAIN--------------------------------*/
+
+.datos_escuela{
+
+    /*display: flex;: Aplica el modelo de diseño flexible al contenedor. Esto convierte a .datos_escuela en un contenedor flexible, permitiendo que sus elementos hijos (por ejemplo, article o div) se distribuyan en una fila horizontal.
+    justify-content: space-around;: Alinea los elementos hijos dentro del contenedor de manera que haya un espacio igual entre ellos y los bordes del contenedor. Esto asegura que los elementos hijos se distribuyan uniformemente con espacio alrededor de cada uno.*/
+
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 40px;
+}
+article div h2{
+
+    /*text-align: center;: Centra el texto horizontalmente dentro del elemento <h2>. Esto hace que el texto del encabezado esté alineado en el centro de su contenedor.
+    line-height: 100px;: Establece la altura de línea del texto dentro del <h2>.*/
+
+    text-align: center;
+    line-height: 100px;
+}
+article div p{
+
+    /*text-align: center;: Centra el texto horizontalmente dentro del elemento <p>. Esto asegura que el texto dentro de los párrafos también esté alineado al centro.*/
+
+    text-align: center;
+
+}
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+--+-+-+-+-+-+-+-+-+-+-+-+-ESTILOS PRESUPUESTO+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+
+/*------------------------MAIN--------------------------------*/
+
+.container-form{
+    background-color: rgb(237, 232, 232);
+}
+.container-form h2{
+    font-size: 35px;
+    text-align: center;
+}
+.container-form p{
+    color: rgb(135, 123, 123);
+    font-weight: bold;
+    padding: 5px 20px;
+    text-align: justify;
+    font-size: 1.5em;
+    margin: auto;
+}
+.form{
+
+    /*margin-top: auto;: Aplica un margen superior automático, empujando el formulario hacia abajo si está dentro de un contenedor con un tamaño variable.
+    display: flex;: Establece el contenedor del formulario como un contenedor flexbox.
+    flex-flow: column;: Organiza los elementos dentro del contenedor en una columna vertical.*/
+
+    margin-top: auto;
+    display: flex;
+    flex-flow: column;
+}
+.form_datos{
+    display: flex;
+    flex-flow: column;
+}
+.form_botones{
+    display: flex;
+    flex-flow: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.boton_politica{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.form_datos, .form_botones, .boton_politica{
+    width: 800px;
+    margin: auto;
+    padding: 15px 30px;
+}
+.form_datos > input{
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+.form_datos > textarea{
+    height: 100px;
+    padding: 30px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+.form_botones > input{
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+.form_botones >input:hover{
+    background-color: rgb(193, 180, 206);
+    cursor: pointer;
+}
+.imagen_contacto{
+    width: 700px;
+    height: auto;
+}
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+-+--+-+-+-+-+-+-+-+-+-+-+-+-ESTILOS PRODUCTO+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
+
+/*------------------------MAIN--------------------------------*/
+
+.grid-container {
+
+    /*display: grid;: Activa el modo de cuadrícula para el contenedor, lo que permite organizar los elementos hijos en un diseño de cuadrícula.
+    grid-template-columns: repeat(2, 1fr);: Define dos columnas de igual ancho (1fr cada una). repeat(2, 1fr) es una forma abreviada de especificar grid-template-columns: 1fr 1fr;.
+    gap: 20px;: Establece un espacio entre las filas y columnas de la cuadrícula.
+    width: auto;: El contenedor se ajustará automáticamente al contenido.
+    padding: 16px;: Añade un espacio interno de 16px alrededor del contenido del contenedor.
+    background-color: rgb(237, 232, 232);: Establece un color de fondo gris claro para el contenedor.*/
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: auto;
+    padding: 16px;
+    background-color: rgb(237, 232, 232);
+}
+
+.grid-item {
+
+    /*border-radius: Redondea las esquinas del elemento
+    overflow: hidden Oculta cualquier contenido que sobresalga del área delimitada por el borde del elemento.
+    text-align: center;: Centra el texto y otros contenidos dentro del elemento.*/
+
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.grid-item p {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+    color: rgb(135, 123, 123);
+}
+
+.foto{
+
+    /*width: 100%;: La imagen ocupará todo el ancho del contenedor.
+    object-fit: cover;: Ajusta la imagen para que cubra completamente el contenedor, manteniendo la proporción, pero recortando si es necesario.*/
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 25px;
+
+}
+.texto{
+    background-color:rgb(237, 232, 232); ;
+}
+.titulo{
+    text-align: center;
+    margin-top: 10px;
+}
+.grid-item:hover{
+
+    /*background-color: rgb(230, 204, 230);: Cambia el color de fondo a un tono lila suave cuando el ratón pasa sobre un elemento .grid-item.*/
+
+    background-color:rgb(230, 204, 230);
+    cursor: pointer;
+}
+
+

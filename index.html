@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Infantil Pequeños Pasos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body><!--El cuerpo del documento contiene la información que se mostrará en la página web, dividida en secciones como la cabecera, contenido principal y pie de página. Al final, se incluye un archivo JavaScript externo.-->
+    
+    <!--CABECERA-->
+    <header>
+        <!--<header>: Aqui encontraremos el logotipo de la escuela y una frase destacada.
+        <img>: Muestra una imagen (el logotipo) con clases y dimensiones especificadas.
+        <h1>: Muestra el encabezado principal con su correspondiente cita.-->
+        <img src="./assets/images/Logo guardería infantil pies dibujo lila.jpg" alt="foto logotipo escuela" class="logotipo" width="500" height="500">
+        <h1 class="frase">"Cuando se puede elegir es obligado acertar"</h1>
+    </header>
+
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav>
+        <!--<nav>: Área de navegación que incluye un menú y un formulario de búsqueda.
+        <ul> y <li>:Aparece la lista de enlaces de navegación.
+        <a>: Enlaces a diferentes páginas, algunos abren en una nueva pestaña (target="_blank").
+        <form>: Formulario con un campo de búsqueda y un botón para enviar.-->
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="./views/contacto.html" target="_blank">Contacto</a></li>
+            <li><a href="./views/presupuesto.html" target="_blank">Presupuesto</a></li>
+            <li><a href="./views/productos.html" target="_blank">Productos</a></li>
+        </ul>
+        <form>
+            <input type="search" placeholder="Buscar">
+            <input type="submit" value="Buscar">
+        </form>
+    </nav>
+    
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <!--<main>: Contiene el contenido principal de la página.
+        Primer <section>: Incluye varios <article> con información detallada, imágenes y textos sobre la metodología y características de la escuela.
+        Segundo <section class="horario">: Presenta información breve sobre el horario, dirección y teléfono de la escuela, estructurada en artículos.
+        Cada <article class="principal"> sigue una estructura similar:
+            -Una imagen relacionada con el tema.
+            -Un div que contiene:
+            -Encabezados (<h2>, <h3>) que introducen el tema.
+            -Párrafos (<p>) que desarrollan la información.-->
+        <section>
+            <article class="principal">
+                <img src="./assets/images/fondo.jpg" alt="niños escuela" width="430" height="320" class="imagen">
+                <div>
+                    <h2>APRENDEN Y EXPLORAN A SU RITMO</h2>
+                    <p>
+                    Centro de Educacion Infantil situado en Madrid basado en la metodologia creativa donde los mas peques aprenden e indagan por si mismos
+                    </p>
+                </div>
+            </article>
+            <article class="principal">
+                <div>
+                    <h2>ELLOS SON LOS PROTAGONISTAS</h2>
+                <h3>¿Por que elegirnos?</h3>
+                <p>
+                    CEI Pequeños Pasos se caracteriza por su metodología creativa. Partiremos de los intereses de los niños, dándole la oportunidad de descubrir por sí mismos y experimentar cada vivencia.
+                    Trabajamos en un aprendizaje basado en la indagación donde nos encargamos de buscar la verdad, la información o el conocimiento.
+                    Con este enfoque el alumnado aprende a formar sus propios puntos de vista de una manera razonada y argumentada, algo esencial para construir su identidad. Es decir, a la misma vez que ellos comienzan a hacer preguntas, entre ellos mismo llegan a la respuesta investigando.
+                    Esta metodología se centra en afrontar problemas y en el trabajo cooperativo. Es super importante que trabajemos en equipo para fomentar el aprendizaje.
+                </p>
+                </div>
+                <img src="./assets/images/porqueelegirnos.jpeg" alt="porqueelegirnos" width="1284" height="1170" class="imagen">
+            </article>
+            <article class="principal">
+                <img src="./assets/images/trabajoporproyectos.jpeg " alt="trabajo por proyectos ejemplo" width="1284" height="1571" class="imagen">
+                <div>
+                    <h2>APRENDIZAJE POR INDAGACION</h2>
+                <h3>TRABAJO POR PROYECTOS</h3>
+                <p>
+                    En CEI Pequeños Pasos cultivamos el aprendizaje basado en la INDAGACIÓN como motor principal de la educación de nuestros peques. Creemos en la importancia de empoderar a los niños para que busquen la verdad, la información y el conocimiento de manera activa y participativa.
+                    Es un enfoque que permite al alumnado formar sus propios puntos de vista de manera razonada y argumentada. Este proceso es esencial para construir su identidad, fomentando el pensamiento crítico y la capacidad de expresar sus ideas. Alentamos a los peques a hacer preguntas y a buscar respuestas, promoviendo la curiosidad.
+                    Nuestra metodología se basa en enfrentar desafíos y trabajar de manera cooperativa, ya que es fundamental fomentar el trabajo en equipo desde los primeros años de vida.
+                    Descubre más sobre nuestro enfoque pedagógico y sus beneficios ¡Contáctanos hoy mismo!
+                </p>      
+                </div>  
+            </article>
+        </section>
+        <section class="horario">
+            <article class="puntos">
+                <h2>Horario</h2>
+                <p>De Lunes a viernes</p>
+                <p >De 7:30-18:00</p>
+            </article>
+            <article class="puntos">
+                <h2>Dirección</h2>
+                <p>C/ de Montearagon, 3, Bajo, Hortaleza, Madrid</p>
+            </article>
+            <article class="puntos">
+                <h2>Teléfono</h2>
+                <p>916871345</p>
+            </article>
+        </section>
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <!--<footer>: Contiene información adicional y enlaces a redes sociales.
+            Primer <article>: Invita a seguir en redes sociales, mostrando íconos de Facebook e Instagram que enlazan a dichas plataformas.
+            Segundo <article>: Proporciona información de contacto y legal.-->
+        <section>
+            <article class="contenido_redes">
+                <h2 class="titulo_redes">Siguenos en las redes sociales</h2>
+		        <a href="https://www.facebook.com/" target="_blank" ><img class="redes"  src="./assets/images/icons8-facebook-nuevo-48.png" alt="Icono facebook" width="48" height="48"></a>
+		        <a href="https://www.instagram.com/?hl=es" target="_blank" ><img class="redes"  src="./assets/images/icons8-instagram-48.png" alt="Icono instagram" width="48" height="48"></a>
+            </article>
+            <article class="contenido_relacionado">
+                <p>CEI Pequeños Pasos: C/ de Montearagon, 3, Bajo, Hortaleza, Madrid</p>
+                <p>Aviso Legal</p>
+                <p>&copy; 2024 CEI Pequeños Pasos Todos los derechos reservados</p>
+            </article>   
+        </section>  
+    </footer>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
