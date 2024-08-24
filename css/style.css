@@ -151,7 +151,12 @@ footer{
     display: flex;
     margin: 10px auto;
 }
-
+.aviso_legal{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(135, 123, 123);
+    text-decoration: none;
+}
 /*+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 -+--+-+-+-+-+-+-+-+-+-+-+-+-ESTILOS INDEX+-+-+-+-+-+-+-+-+-+-+
 -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-*/
@@ -238,14 +243,14 @@ article div p{
 
 /*------------------------MAIN--------------------------------*/
 
-.container-form{
+.container_form{
     background-color: rgb(237, 232, 232);
 }
-.container-form h2{
+.container_form h2{
     font-size: 35px;
     text-align: center;
 }
-.container-form p{
+.container_form p{
     color: rgb(135, 123, 123);
     font-weight: bold;
     padding: 5px 20px;
@@ -270,8 +275,7 @@ article div p{
 .form_botones{
     display: flex;
     flex-flow: column;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 .boton_politica{
     display: flex;

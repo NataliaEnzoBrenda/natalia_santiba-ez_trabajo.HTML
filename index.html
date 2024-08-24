@@ -9,25 +9,25 @@
 <body><!--El cuerpo del documento contiene la información que se mostrará en la página web, dividida en secciones como la cabecera, contenido principal y pie de página. Al final, se incluye un archivo JavaScript externo.-->
     
     <!--CABECERA-->
-    <header>
-        <!--<header>: Aqui encontraremos el logotipo de la escuela y una frase destacada.
+    <!--<header>: Aqui encontraremos el logotipo de la escuela y una frase destacada.
         <img>: Muestra una imagen (el logotipo) con clases y dimensiones especificadas.
         <h1>: Muestra el encabezado principal con su correspondiente cita.-->
-        <img src="./assets/images/Logo guardería infantil pies dibujo lila.jpg" alt="foto logotipo escuela" class="logotipo" width="500" height="500">
+    <header>
+        <img src="./assets/images/logo_guarderia_infantil_pies_dibujo_lila.jpg" alt="foto logotipo escuela con pies dibujados de color lila" class="logotipo">
         <h1 class="frase">"Cuando se puede elegir es obligado acertar"</h1>
     </header>
 
     <!--BARRA DE NAVEGACIÓN-->
-    <nav>
-        <!--<nav>: Área de navegación que incluye un menú y un formulario de búsqueda.
+     <!--<nav>: Área de navegación que incluye un menú y un formulario de búsqueda.
         <ul> y <li>:Aparece la lista de enlaces de navegación.
         <a>: Enlaces a diferentes páginas, algunos abren en una nueva pestaña (target="_blank").
         <form>: Formulario con un campo de búsqueda y un botón para enviar.-->
+    <nav>
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="./views/contacto.html" target="_blank">Contacto</a></li>
-            <li><a href="./views/presupuesto.html" target="_blank">Presupuesto</a></li>
-            <li><a href="./views/productos.html" target="_blank">Productos</a></li>
+            <li><a href="./views/galeria.html">Galeria</a></li>
+            <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+            <li><a href="./views/contacto.html">Contacto</a></li>
         </ul>
         <form>
             <input type="search" placeholder="Buscar">
@@ -36,8 +36,7 @@
     </nav>
     
     <!--CONTENIDO PRINCIPAL-->
-    <main>
-        <!--<main>: Contiene el contenido principal de la página.
+    <!--<main>: Contiene el contenido principal de la página.
         Primer <section>: Incluye varios <article> con información detallada, imágenes y textos sobre la metodología y características de la escuela.
         Segundo <section class="horario">: Presenta información breve sobre el horario, dirección y teléfono de la escuela, estructurada en artículos.
         Cada <article class="principal"> sigue una estructura similar:
@@ -45,7 +44,8 @@
             -Un div que contiene:
             -Encabezados (<h2>, <h3>) que introducen el tema.
             -Párrafos (<p>) que desarrollan la información.-->
-        <section>
+    <main>
+        <div>
             <article class="principal">
                 <img src="./assets/images/fondo.jpg" alt="niños escuela" width="430" height="320" class="imagen">
                 <div>
@@ -81,8 +81,8 @@
                 </p>      
                 </div>  
             </article>
-        </section>
-        <section class="horario">
+        </div>
+        <div class="horario">
             <article class="puntos">
                 <h2>Horario</h2>
                 <p>De Lunes a viernes</p>
@@ -96,26 +96,26 @@
                 <h2>Teléfono</h2>
                 <p>916871345</p>
             </article>
-        </section>
+        </div>
     </main>
 
     <!--PIE DE PAGINA-->
-    <footer>
-        <!--<footer>: Contiene información adicional y enlaces a redes sociales.
+    <!--<footer>: Contiene información adicional y enlaces a redes sociales.
             Primer <article>: Invita a seguir en redes sociales, mostrando íconos de Facebook e Instagram que enlazan a dichas plataformas.
             Segundo <article>: Proporciona información de contacto y legal.-->
-        <section>
-            <article class="contenido_redes">
+    <footer>
+        <div>
+            <div class="contenido_redes">
                 <h2 class="titulo_redes">Siguenos en las redes sociales</h2>
 		        <a href="https://www.facebook.com/" target="_blank" ><img class="redes"  src="./assets/images/icons8-facebook-nuevo-48.png" alt="Icono facebook" width="48" height="48"></a>
 		        <a href="https://www.instagram.com/?hl=es" target="_blank" ><img class="redes"  src="./assets/images/icons8-instagram-48.png" alt="Icono instagram" width="48" height="48"></a>
-            </article>
-            <article class="contenido_relacionado">
+            </div>
+            <div class="contenido_relacionado">
                 <p>CEI Pequeños Pasos: C/ de Montearagon, 3, Bajo, Hortaleza, Madrid</p>
-                <p>Aviso Legal</p>
+                <p><a href="#" class="aviso_legal">Aviso legal</a></p>
                 <p>&copy; 2024 CEI Pequeños Pasos Todos los derechos reservados</p>
-            </article>   
-        </section>  
+            </div>   
+        </div>  
     </footer>
     <script src="./js/javascript.js"></script>
 </body>

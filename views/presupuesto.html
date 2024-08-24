@@ -10,7 +10,7 @@
 
     <!--CABECERA-->
     <header>
-        <img src="../assets/images/Logo guardería infantil pies dibujo lila.jpg" alt="foto logotipo escuela" class="logotipo" width="500" height="500">
+        <img src="../assets/images/logo_guarderia_infantil_pies_dibujo_lila.jpg" alt="foto logotipo escuela con dibujo de pies de color lila" class="logotipo">
         <h1 class="frase">"Cuando se puede elegir es obligado acertar"</h1>
     </header>
 
@@ -18,9 +18,9 @@
     <nav>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../views/contacto.html" target="_blank">Contacto</a></li>
+            <li><a href="../views/galeria.html">Galeria</a></li>
             <li><a href="#">Presupuesto</a></li>
-            <li><a href="../views/productos.html" target="_blank">Productos</a></li>
+            <li><a href="../views/contacto.html">Contacto</a></li>
         </ul>
         <form>
             <input type="search" placeholder="Buscar">
@@ -29,8 +29,7 @@
     </nav>
     
     <!--CONTENIDO PRINCIPAL-->
-    <main>
-        <!--<section> y <article>: Organizan el contenido en bloques.
+     <!--<section> y <article>: Organizan el contenido en bloques.
             Imagen de contacto: Una imagen representativa acompañada de un formulario de contacto.
             Formulario de contacto:
                 -Nombre: Campo para que el usuario introduzca su nombre.
@@ -38,8 +37,9 @@
                 -Mensaje: Un área de texto para el mensaje.
                 -Botón de envío: Envía los datos del formulario.
                 -Checkbox: Confirma que el usuario acepta la política de privacidad.-->
-        <section class="container-form">
-            <article class="info-form">
+    <main>
+        <div class="container_form">
+            <article class="info_form">
                 <img src="../assets/images/contacto.jpg" alt="caritas sonrientes" width="1024" height="683" class="imagen_contacto">
                 <div>
                     <h2 class="titulo">Contáctanos</h2>
@@ -47,10 +47,11 @@
                         Si tienes preguntas, no dudes en ponerte en contacto con nosotros, estaremos encantados de informarte de todo lo que necesites saber.
                     </p>
                     <form action="#" method="get" name="formulario" class="form">
-                        <div class="form_datos">
-                            <input type="text" name="Nombre" placeholder="Escribe tu nombre">
-                            <input type="email" name="Correo Electronico" placeholder="Escribe tu correo">
-                            <textarea name="Mensaje" id="Mensaje">Escribe un mensaje</textarea>
+                        <div class="form_datos">                   
+                            <input type="text" name="Nombre" placeholder="Nombre" required>
+                            <input type="email" name="Email" placeholder="Email"  required>
+                            <input type="tel" name="Teléfono" placeholder="Teléfono" required>
+                            <textarea name="Mensaje" id="Mensaje" placeholder="Solicita información"></textarea>
                         </div>
                         <div class="form_botones">
                             <input type="submit" value="Enviar">
@@ -61,23 +62,23 @@
                     </form>
                 </div>     
             </article>
-        </section>
+        </div>
     </main>
 
     <!--PIE DE PAGINA-->
     <footer>
-        <section>
-            <article class="contenido_redes">
+        <div>
+            <div class="contenido_redes">
                 <h2 class="titulo_redes">Siguenos en las redes sociales</h2>
 		        <a href="https://www.facebook.com/" target="_blank" ><img class="redes"  src="../assets/images/icons8-facebook-nuevo-48.png" alt="Icono facebook" width="48" height="48"></a>
 		        <a href="https://www.instagram.com/?hl=es" target="_blank" ><img class="redes"  src="../assets/images/icons8-instagram-48.png" alt="Icono instagram" width="48" height="48"></a>
-            </article>
-            <article class="contenido_relacionado">
+            </div>
+            <div class="contenido_relacionado">
                 <p>CEI Pequeños Pasos: C/ de Montearagon, 3, Bajo, Hortaleza, Madrid</p>
-                <p>Aviso Legal</p>
+                <p><a href="#" class="aviso_legal">Aviso legal</a></p>
                 <p>&copy; 2024 CEI Pequeños Pasos Todos los derechos reservados</p>
-            </article>
-        </section>    
+            </div>   
+        </div>  
     </footer>
     <script src="./js/javascript.js"></script>
 </body>
